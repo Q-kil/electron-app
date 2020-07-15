@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext", // 重要 可以明显减小最终打包的体积
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "strictNullChecks": false,
+    "lib": ["dom", "es2015"],
+    "baseUrl": "./src",
+    "paths": {
+      "@angular/*": ["../node_modules/@angular/*"],
+      "core-js/es7/reflect": [
+        "../node_modules/core-js/proposals/reflect-metadata"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}
